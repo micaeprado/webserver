@@ -1,17 +1,17 @@
 const http = require('http');
 
-http.createServer((require, resp) => {
+http.createServer((req, res) => {
 
-        resp.writeHead(200, { 'Content-type': 'application/json' });
+        res.writeHead(200, { 'Content-type': 'application/json' });
 
         let salida = {
             nombre: 'Micaela',
             edad: 24,
-            url: require.url
+            url: req.url
         }
-        resp.write(JSON.stringify(salida));
+        res.write(JSON.stringify(salida));
         // resp.write('Hola mundo');
-        resp.end();
+        res.end();
     })
     .listen(8080);
 
