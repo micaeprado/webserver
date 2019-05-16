@@ -1,0 +1,6 @@
+
+descargar bootstrap pero solo usar los arhivs css y js 
+
+npm i hbs
+
+nodemon server.js -e hbs,js,html,css
