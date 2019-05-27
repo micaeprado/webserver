@@ -1,3 +1,5 @@
+npm install
+
 
 descargar bootstrap pero solo usar los arhivs css y js 
 
